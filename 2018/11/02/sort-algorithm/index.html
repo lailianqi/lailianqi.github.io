@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="计算机科学,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Catcher07">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="排序算法选择排序123456789101112void select_sort(vector&amp;lt;int&amp;gt; &amp;amp;a) &amp;#123;    int m = a.size();    for (int i = 0; i &amp;lt; m; i++) &amp;#123;        int minIndex = i;        for (int j = i + 1; j &amp;lt; m; j++">
+<meta name="keywords" content="计算机科学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="排序算法">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/sort-algorithm/index.html">
 <meta property="og:site_name" content="Catcher07">
+<meta property="og:description" content="排序算法选择排序123456789101112void select_sort(vector&amp;lt;int&amp;gt; &amp;amp;a) &amp;#123;    int m = a.size();    for (int i = 0; i &amp;lt; m; i++) &amp;#123;        int minIndex = i;        for (int j = i + 1; j &amp;lt; m; j++">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-02T14:57:11.860Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Catcher07">
+<meta name="twitter:title" content="排序算法">
+<meta name="twitter:description" content="排序算法选择排序123456789101112void select_sort(vector&amp;lt;int&amp;gt; &amp;amp;a) &amp;#123;    int m = a.size();    for (int i = 0; i &amp;lt; m; i++) &amp;#123;        int minIndex = i;        for (int j = i + 1; j &amp;lt; m; j++">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/02/sort-algorithm/">
 
 
 
 
 
-  <title>Catcher07</title>
+  <title>排序算法 | Catcher07</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -234,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/02/sort-algorithm/" itemprop="url">排序算法</a></h1>
+          <h1 class="post-title" itemprop="name headline">排序算法</h1>
         
 
         <div class="post-meta">
@@ -340,9 +342,7 @@
       
 
       
-        
-          
-            <h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">void select_sort(vector&lt;int&gt; &amp;a) &#123;</span><br><span class="line">    int m = a.size();</span><br><span class="line">    for (int i = 0; i &lt; m; i++) &#123;</span><br><span class="line">        int minIndex = i;</span><br><span class="line">        for (int j = i + 1; j &lt; m; j++) &#123;</span><br><span class="line">            if (a[j] &lt; a[minIndex]) &#123;</span><br><span class="line">                minIndex = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        swap(a[i], a[minIndex]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">void select_sort(vector&lt;int&gt; &amp;a) &#123;</span><br><span class="line">    int m = a.size();</span><br><span class="line">    for (int i = 0; i &lt; m; i++) &#123;</span><br><span class="line">        int minIndex = i;</span><br><span class="line">        for (int j = i + 1; j &lt; m; j++) &#123;</span><br><span class="line">            if (a[j] &lt; a[minIndex]) &#123;</span><br><span class="line">                minIndex = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        swap(a[i], a[minIndex]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><p>C++实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">void insert_sort(vector&lt;int&gt; &amp;a) &#123;</span><br><span class="line">    int m = a.size();</span><br><span class="line">    for (int i = 0; i &lt; m; i++) &#123;</span><br><span class="line">        int j = i;</span><br><span class="line">        while (j &gt; 0 &amp;&amp; a[j] &lt; a[j - 1]) &#123;</span><br><span class="line">            swap(a[j], a[j - 1]);</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>Python实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">1.	class Insert_sort:  </span><br><span class="line">2.	    &apos;&apos;&apos;&apos;&apos; </span><br><span class="line">3.	    插入排序 </span><br><span class="line">4.	    :type nums: List[int] 要排序的数组 </span><br><span class="line">5.	    &apos;&apos;&apos;  </span><br><span class="line">6.	  </span><br><span class="line">7.	    def sort(self, nums):  </span><br><span class="line">8.	        &apos;&apos;&apos;&apos;&apos; </span><br><span class="line">9.	        用swap的插入排序 </span><br><span class="line">10.	        :type nums: List[int] 要排序的数组 </span><br><span class="line">11.	        &apos;&apos;&apos;  </span><br><span class="line">12.	        m = len(nums)  </span><br><span class="line">13.	        for i in range(m):  </span><br><span class="line">14.	            j = i  </span><br><span class="line">15.	            while j &gt; 0 and nums[j] &lt; nums[j-1]:  </span><br><span class="line">16.	                nums[j], nums[j-1] = nums[j-1], nums[j]  </span><br><span class="line">17.	                j -= 1  </span><br><span class="line">18.	  </span><br><span class="line">19.	    def sort_2(self, nums):  </span><br><span class="line">20.	        &apos;&apos;&apos;&apos;&apos; </span><br><span class="line">21.	        标准插入排序 </span><br><span class="line">22.	        :type nums: List[int] 要排序的数组 </span><br><span class="line">23.	        &apos;&apos;&apos;  </span><br><span class="line">24.	        m = len(nums)  </span><br><span class="line">25.	        for i in range(m):  </span><br><span class="line">26.	            key = nums[i]  </span><br><span class="line">27.	            j = i-1  </span><br><span class="line">28.	            while j &gt;= 0 and nums[j] &gt; key:  </span><br><span class="line">29.	                nums[j+1] = nums[j]  </span><br><span class="line">30.	                j -= 1  </span><br><span class="line">31.	            nums[j+1] = key</span><br></pre></td></tr></table></figure></p>
 <h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">//冒泡排序</span><br><span class="line">void bubble_sort(vector&lt;int&gt; &amp;a) &#123;</span><br><span class="line">    int m = a.size();</span><br><span class="line">    for (int i = m - 1; i &gt;= 0; i--) &#123;</span><br><span class="line">        for (int j = 0; j &lt; i; j++) &#123;</span><br><span class="line">            if (a[j] &gt; a[j + 1]) &#123;</span><br><span class="line">                swap(a[j], a[j + 1]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//冒泡排序2</span><br><span class="line">void bubble_sort2(vector&lt;int&gt; &amp;a) &#123;</span><br><span class="line">    int m = a.size();</span><br><span class="line">    for (int i = 0; i &lt; m - 1; i++) &#123;</span><br><span class="line">        bool flag = true;</span><br><span class="line">        for (int j = 0; j &lt; m - 1 - i; j++) &#123;</span><br><span class="line">            if (a[j] &gt; a[j + 1]) &#123;</span><br><span class="line">                swap(a[j], a[j + 1]);</span><br><span class="line">                flag = false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if (flag) &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -355,8 +355,6 @@
 <h2 id="shell排序"><a href="#shell排序" class="headerlink" title="shell排序"></a>shell排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class shell_Solution &#123;</span><br><span class="line">  public:</span><br><span class="line">    void sort(vector&lt;int&gt; &amp;num) &#123;</span><br><span class="line">        int m = num.size();</span><br><span class="line">        for (int gap = m / 2; gap &gt; 0; gap /= 2) &#123;</span><br><span class="line">            for (int i = gap; i &lt; m; i++) &#123;</span><br><span class="line">                int j = i;</span><br><span class="line">                while (j - gap &gt;= 0 &amp;&amp; num[j] &lt; num[j - gap]) &#123;</span><br><span class="line">                    swap(num[j], num[j - gap]);</span><br><span class="line">                    j = j - gap;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Python实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">1.	class Shell_sort:  </span><br><span class="line">2.	    &apos;&apos;&apos;&apos;&apos; </span><br><span class="line">3.	    shell排序 </span><br><span class="line">4.	    :type nums: List[int] 要排序的数组 </span><br><span class="line">5.	    &apos;&apos;&apos;  </span><br><span class="line">6.	  </span><br><span class="line">7.	    def sort(self, nums):  </span><br><span class="line">8.	        &apos;&apos;&apos;&apos;&apos; </span><br><span class="line">9.	        :type nums: List[int] 要排序的数组 </span><br><span class="line">10.	        &apos;&apos;&apos;  </span><br><span class="line">11.	        m = len(nums)  </span><br><span class="line">12.	        gap = m//2  </span><br><span class="line">13.	        while gap &gt; 0:  </span><br><span class="line">14.	            for i in range(gap, m):  </span><br><span class="line">15.	                j = i  </span><br><span class="line">16.	                while j - gap &gt;= 0 and nums[j] &lt; nums[j - gap]:  </span><br><span class="line">17.	                    nums[j], nums[j - gap] = nums[j - gap], nums[j]  </span><br><span class="line">18.	                    j = j - gap  </span><br><span class="line">19.	            gap = gap//2  </span><br><span class="line">20.	  </span><br><span class="line">21.	    def sort_2(self, nums):  </span><br><span class="line">22.	        m = len(nums)  </span><br><span class="line">23.	        gap = m//2  </span><br><span class="line">24.	        while gap &gt; 0:  </span><br><span class="line">25.	            for i in range(gap, m):  </span><br><span class="line">26.	                j, key = i, nums[i]  </span><br><span class="line">27.	                while j - gap &gt;= 0 and key &lt; nums[j - gap]:  </span><br><span class="line">28.	                    nums[j] = nums[j - gap]  </span><br><span class="line">29.	                    j -= gap  </span><br><span class="line">30.	                nums[j] = key  </span><br><span class="line">31.	            gap //= 2</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
     
@@ -371,160 +369,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/02/blog_welcome/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lai LianQi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Catcher07">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/02/blog_welcome/" itemprop="url">欢迎来到我的私人博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-02T15:30:16+08:00">
-                2018-11-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/个人生活/" itemprop="url" rel="index">
-                    <span itemprop="name">个人生活</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/计算机科学/" rel="tag"># 计算机科学</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          欢迎来到我的私人博客，我会在这里分享我的生活
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/02/blog_welcome/">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/02/blog_welcome/" rel="next" title="欢迎来到我的私人博客">
+                <i class="fa fa-chevron-left"></i> 欢迎来到我的私人博客
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -534,10 +408,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -545,6 +420,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -565,8 +444,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -626,6 +514,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#排序算法"><span class="nav-number">1.</span> <span class="nav-text">排序算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择排序"><span class="nav-number">1.1.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入排序"><span class="nav-number">1.2.</span> <span class="nav-text">插入排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡排序"><span class="nav-number">1.3.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#归并排序"><span class="nav-number">1.4.</span> <span class="nav-text">归并排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#堆排序"><span class="nav-number">1.5.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速排序"><span class="nav-number">1.6.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell排序"><span class="nav-number">1.7.</span> <span class="nav-text">shell排序</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -773,6 +677,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
