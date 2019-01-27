@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="欢迎来到我的私人博客，我会在这里分享我的生活">
+<meta name="description" content="##C++线程池代码头文件1234567891011121314151617181920212223242526272829#ifndef THREADPOOLS_H#define THREADPOOLS_H#include &amp;lt;thread&amp;gt;#include &amp;lt;functional&amp;gt;#include &amp;lt;condition_variable&amp;gt;#include &amp;l">
 <meta name="keywords" content="计算机科学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="欢迎来到我的私人博客">
-<meta property="og:url" content="http://yoursite.com/2018/11/02/blog_welcome/index.html">
+<meta property="og:title" content="排序算法">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/C++多线程线程池设计/index.html">
 <meta property="og:site_name" content="Catcher07">
-<meta property="og:description" content="欢迎来到我的私人博客，我会在这里分享我的生活">
+<meta property="og:description" content="##C++线程池代码头文件1234567891011121314151617181920212223242526272829#ifndef THREADPOOLS_H#define THREADPOOLS_H#include &amp;lt;thread&amp;gt;#include &amp;lt;functional&amp;gt;#include &amp;lt;condition_variable&amp;gt;#include &amp;l">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-02T13:41:42.387Z">
+<meta property="og:updated_time" content="2019-01-27T14:05:48.615Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="欢迎来到我的私人博客">
-<meta name="twitter:description" content="欢迎来到我的私人博客，我会在这里分享我的生活">
+<meta name="twitter:title" content="排序算法">
+<meta name="twitter:description" content="##C++线程池代码头文件1234567891011121314151617181920212223242526272829#ifndef THREADPOOLS_H#define THREADPOOLS_H#include &amp;lt;thread&amp;gt;#include &amp;lt;functional&amp;gt;#include &amp;lt;condition_variable&amp;gt;#include &amp;l">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/02/blog_welcome/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/02/C++多线程线程池设计/">
 
 
 
 
 
-  <title>欢迎来到我的私人博客 | Catcher07</title>
+  <title>排序算法 | Catcher07</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/02/blog_welcome/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/02/C++多线程线程池设计/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lai LianQi">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">欢迎来到我的私人博客</h1>
+          <h1 class="post-title" itemprop="name headline">排序算法</h1>
         
 
         <div class="post-meta">
@@ -282,7 +282,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-02T15:30:16+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-02T22:28:51+08:00">
                 2018-11-02
               </time>
             
@@ -305,8 +305,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/个人生活/" itemprop="url" rel="index">
-                    <span itemprop="name">个人生活</span>
+                  <a href="/categories/C-学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">C++学习笔记</span>
                   </a>
                 </span>
 
@@ -328,10 +328,6 @@
           
 
           
-              <div class="post-description">
-                  欢迎来到我的私人博客，我会在这里分享我的生活
-              </div>
-          
 
         </div>
       </header>
@@ -346,7 +342,8 @@
       
 
       
-        <p>欢迎来到我的私人博客，谢谢</p>
+        <p>##C++线程池代码<br>头文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">#ifndef THREADPOOLS_H</span><br><span class="line">#define THREADPOOLS_H</span><br><span class="line"></span><br><span class="line">#include &lt;thread&gt;</span><br><span class="line">#include &lt;functional&gt;</span><br><span class="line">#include &lt;condition_variable&gt;</span><br><span class="line">#include &lt;mutex&gt;</span><br><span class="line">#include &lt;deque&gt;</span><br><span class="line">#include &lt;memory.h&gt;</span><br><span class="line">#include &lt;vector&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class ThreadPools</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">    using Task = std::function&lt;void()&gt;;</span><br><span class="line">    ThreadPools(int num_thread = 5);</span><br><span class="line">    ~ThreadPools();</span><br><span class="line">    void thread_run();</span><br><span class="line">    void start_threads();</span><br><span class="line">    void add_task_to_queue(Task task);</span><br><span class="line">    void stop();</span><br><span class="line">    std::condition_variable condition;</span><br><span class="line">    std::mutex queue_mutex;</span><br><span class="line">    vector&lt;unique_ptr&lt;thread&gt;&gt; threads;</span><br><span class="line">    deque&lt;Task&gt; tasks_queue;</span><br><span class="line">    int num_thread;</span><br><span class="line">    bool is_running = false;</span><br><span class="line">&#125;;</span><br><span class="line">#endif // THREADPOOLS_H</span><br></pre></td></tr></table></figure></p>
+<p>代码具体实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;threadpools.h&quot;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ThreadPools::ThreadPools(int num_thread):num_thread(num_thread)&#123;&#125;</span><br><span class="line"></span><br><span class="line">ThreadPools::~ThreadPools()&#123;</span><br><span class="line">    stop();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ThreadPools::thread_run()</span><br><span class="line">&#123;</span><br><span class="line">    while(is_running)&#123;</span><br><span class="line">        Task task;</span><br><span class="line">        &#123;</span><br><span class="line">            unique_lock&lt;mutex&gt; lock(queue_mutex);</span><br><span class="line">            while(tasks_queue.empty()&amp;&amp;is_running)&#123;</span><br><span class="line">                condition.wait(lock);</span><br><span class="line">            &#125;</span><br><span class="line">            if(!tasks_queue.empty())&#123;</span><br><span class="line">                task = tasks_queue.front();</span><br><span class="line">                tasks_queue.pop_front();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if(task)&#123;</span><br><span class="line">            task();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ThreadPools::start_threads()</span><br><span class="line">&#123;</span><br><span class="line">    is_running = true;</span><br><span class="line">    for(int i = 0;i&lt;num_thread;i++)&#123;</span><br><span class="line">        threads.emplace_back(new thread(std::bind(&amp;ThreadPools::thread_run,this)));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ThreadPools::add_task_to_queue(Task task)</span><br><span class="line">&#123;</span><br><span class="line">    &#123;</span><br><span class="line">        unique_lock&lt;mutex&gt; lock(queue_mutex);</span><br><span class="line">        tasks_queue.push_back(std::move(task));</span><br><span class="line">    &#125;</span><br><span class="line">    condition.notify_one();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ThreadPools::stop()</span><br><span class="line">&#123;</span><br><span class="line">    &#123;</span><br><span class="line">        unique_lock&lt;mutex&gt; lock(queue_mutex);</span><br><span class="line">        is_running = false;</span><br><span class="line">        condition.notify_all();</span><br><span class="line">    &#125;</span><br><span class="line">    for(auto &amp;t:threads)&#123;</span><br><span class="line">        t-&gt;join();</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;tasks_queue.size()&lt;&lt;endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -377,14 +374,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/11/02/SGU解题报告/" rel="next" title="SGU解题报告">
+                <i class="fa fa-chevron-left"></i> SGU解题报告
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/02/sort-algorithm/" rel="prev" title="排序算法">
-                排序算法 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/14/Muduo/" rel="prev" title="Muduo网络库总体架构">
+                Muduo网络库总体架构 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

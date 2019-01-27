@@ -79,13 +79,19 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="#反应器模式详解 ##反应器模式设计类图Ractor：Ractor模式的核心，一般作为事件的分发器，控制事件的调度方式，具备注册、删除具体事件。图中的Ractor通过Synchronous Event Demultiplexer来等待事件发生。一旦事件发生，会回调相应事件处理器。EventHandle:事件处理器的抽象。由多个回调函数构成，构成相关事件的处理。ConcreteEventHandle">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Catcher07">
-<meta property="og:url" content="http://yoursite.com/archives/2018/11/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/01/15/Ractor反应器模式/index.html">
 <meta property="og:site_name" content="Catcher07">
+<meta property="og:description" content="#反应器模式详解 ##反应器模式设计类图Ractor：Ractor模式的核心，一般作为事件的分发器，控制事件的调度方式，具备注册、删除具体事件。图中的Ractor通过Synchronous Event Demultiplexer来等待事件发生。一旦事件发生，会回调相应事件处理器。EventHandle:事件处理器的抽象。由多个回调函数构成，构成相关事件的处理。ConcreteEventHandle">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/01/15/Ractor反应器模式/image/反应器模式.png">
+<meta property="og:updated_time" content="2019-01-15T08:47:25.329Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Catcher07">
+<meta name="twitter:description" content="#反应器模式详解 ##反应器模式设计类图Ractor：Ractor模式的核心，一般作为事件的分发器，控制事件的调度方式，具备注册、删除具体事件。图中的Ractor通过Synchronous Event Demultiplexer来等待事件发生。一旦事件发生，会回调相应事件处理器。EventHandle:事件处理器的抽象。由多个回调函数构成，构成相关事件的处理。ConcreteEventHandle">
+<meta name="twitter:image" content="http://yoursite.com/2019/01/15/Ractor反应器模式/image/反应器模式.png">
 
 
 
@@ -115,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/11/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/15/Ractor反应器模式/">
 
 
 
 
 
-  <title>Archive | Catcher07</title>
+  <title> | Catcher07</title>
   
 
 
@@ -140,7 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -234,177 +240,143 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/15/Ractor反应器模式/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lai LianQi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Catcher07">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline"></h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-15T15:18:37+08:00">
+                2019-01-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        Um..! 6 posts in total. Keep on posting.
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/02/C++多线程线程池设计/" itemprop="url">
-              
-                <span itemprop="name">排序算法</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-02T22:28:51+08:00" content="2018-11-02">
-          11-02
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/02/SGU解题报告/" itemprop="url">
-              
-                <span itemprop="name">SGU解题报告</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-02T22:28:51+08:00" content="2018-11-02">
-          11-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/02/sort-algorithm/" itemprop="url">
-              
-                <span itemprop="name">排序算法</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-02T22:28:51+08:00" content="2018-11-02">
-          11-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>#反应器模式详解</p>
+<p>##反应器模式设计类图<br><img src="./image/反应器模式.png" alt="Alt text"><br>Ractor：Ractor模式的核心，一般作为事件的分发器，控制事件的调度方式，具备注册、删除具体事件。图中的Ractor通过Synchronous Event Demultiplexer来等待事件发生。一旦事件发生，会回调相应事件处理器。<br>EventHandle:事件处理器的抽象。由多个回调函数构成，构成相关事件的处理。<br>ConcreteEventHandleA:具体事件处理器。<br>Synchronous Event Demultiplexer(同步事件分离器)：一个系统调用，阻塞到有事件发生为止。对于Linux来说，同步事件分离器指的就是常用的I/O多路复用机制，比如说select、poll、epoll等。在Java NIO领域中，同步事件分离器对应的组件就是Selector；对应的阻塞方法就是select方法。</p>
+<p>##参考出处<br>撰写本博客时用到的参考资料如下：<br><a href="https://blog.csdn.net/baidu20008/article/details/4137876" target="_blank" rel="noopener">https://blog.csdn.net/baidu20008/article/details/4137876</a><br><a href="https://www.cnblogs.com/winner-0715/p/8733787.html" target="_blank" rel="noopener">https://www.cnblogs.com/winner-0715/p/8733787.html</a></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/02/blog_welcome/" itemprop="url">
-              
-                <span itemprop="name">欢迎来到我的私人博客</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-02T15:30:16+08:00" content="2018-11-02">
-          11-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/14/Muduo/" rel="next" title="Muduo网络库总体架构">
+                <i class="fa fa-chevron-left"></i> Muduo网络库总体架构
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -412,6 +384,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -640,6 +616,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
