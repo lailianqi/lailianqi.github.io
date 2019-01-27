@@ -249,125 +249,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/27/Ractor反应器模式-1/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lai LianQi">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Catcher07">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/27/Ractor反应器模式-1/" itemprop="url">Ractor反应器模式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-27T22:25:51+08:00">
-                2019-01-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/25/C++多线程线程池设计/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -605,7 +486,7 @@
         
           
             <p>#反应器模式详解</p>
-<p>##反应器模式设计类图<br><img src="/2019/01/15/Ractor反应器模式/Ractor反应器模式-1/反应器模式.png" alt="Alt text"><br>Ractor：Ractor模式的核心，一般作为事件的分发器，控制事件的调度方式，具备注册、删除具体事件。图中的Ractor通过Synchronous Event Demultiplexer来等待事件发生。一旦事件发生，会回调相应事件处理器。<br>EventHandle:事件处理器的抽象。由多个回调函数构成，构成相关事件的处理。<br>ConcreteEventHandleA:具体事件处理器。<br>Synchronous Event Demultiplexer(同步事件分离器)：一个系统调用，阻塞到有事件发生为止。对于Linux来说，同步事件分离器指的就是常用的I/O多路复用机制，比如说select、poll、epoll等。在Java NIO领域中，同步事件分离器对应的组件就是Selector；对应的阻塞方法就是select方法。</p>
+<p>##反应器模式设计类图<br><img src="/2019/01/15/Ractor反应器模式/反应器模式.png" alt="Alt text"><br>Ractor：Ractor模式的核心，一般作为事件的分发器，控制事件的调度方式，具备注册、删除具体事件。图中的Ractor通过Synchronous Event Demultiplexer来等待事件发生。一旦事件发生，会回调相应事件处理器。<br>EventHandle:事件处理器的抽象。由多个回调函数构成，构成相关事件的处理。<br>ConcreteEventHandleA:具体事件处理器。<br>Synchronous Event Demultiplexer(同步事件分离器)：一个系统调用，阻塞到有事件发生为止。对于Linux来说，同步事件分离器指的就是常用的I/O多路复用机制，比如说select、poll、epoll等。在Java NIO领域中，同步事件分离器对应的组件就是Selector；对应的阻塞方法就是select方法。</p>
 <p>##参考出处<br>撰写本博客时用到的参考资料如下：<br><a href="https://blog.csdn.net/baidu20008/article/details/4137876" target="_blank" rel="noopener">https://blog.csdn.net/baidu20008/article/details/4137876</a><br><a href="https://www.cnblogs.com/winner-0715/p/8733787.html" target="_blank" rel="noopener">https://www.cnblogs.com/winner-0715/p/8733787.html</a></p>
 
           
@@ -1273,7 +1154,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
